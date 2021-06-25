@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/events', 'EventController@index');
+Route::post('/uploads', 'FileUploader');
+Route::get('/file-details', 'GetFileDetails');

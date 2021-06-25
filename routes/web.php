@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/my-profile', 'ProfileController@showProfilePage')->name('my-profile');
 Auth::routes();
 
 Route::get('/companies', 'CompanyController@index')->name('companies');

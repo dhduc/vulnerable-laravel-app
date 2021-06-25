@@ -9,6 +9,7 @@ services:
       - 1234:80
     volumes:
       - .:/app:cached
+      - ./docker/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
   database:
     image: mysql:5.7

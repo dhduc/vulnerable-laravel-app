@@ -46,5 +46,7 @@ class DatabaseSeeder extends Seeder
                 'company_id' => $company->id,
             ]);
         });
+
+        $this->call(DemoDataSeeder::class);
     }
 }
